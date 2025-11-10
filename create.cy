@@ -1,0 +1,13 @@
+CREATE (u:Usuario {nome: "Marcio", idade: 58, pais: "Brasil"})
+CREATE (f:Filme {nome: "Oppenheimer", ano: 2023, duracao: 180})
+CREATE (g:Genero {nome: "Drama Historico"})
+CREATE (d:Diretor {nome: "Christopher Nolan"})
+CREATE (a:Ator {nome: "Cillian Murphy"})
+CREATE (av:Avaliacao {nota: 9})
+
+CREATE (u)-[:ASSISTIU]->(f)
+CREATE (u)-[:AVALIA]->(av)
+CREATE (av)-[:REFERENTE_A]->(f)
+CREATE (f)-[:PERTENCE_A]->(g)
+CREATE (f)-[:DIRIGIDO_POR]->(d)
+CREATE (a)-[:ATUOU_EM]->(f)
