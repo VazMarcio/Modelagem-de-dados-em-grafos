@@ -23,11 +23,11 @@ Modelar um grafo que represente o comportamento de usuários em uma plataforma d
 ### 🧩 Modelo de Grafo
 O grafo inclui os seguintes tipos de nós e relacionamentos:
 
-- Usuário → [:ASSISTIU] → Filme
-- Usuário → [:AVALIA] → Avaliação → [:REFERENTE_A] → Filme
-- Filme → [:PERTENCE_A] → Gênero
-- Filme → [:DIRIGIDO_POR] → Diretor
-- Ator → [:ATUOU_EM] → Filme
+- Usuário → `[:ASSISTIU]` → Filme
+- Usuário → `[:AVALIA]` → Avaliação → `[:REFERENTE_A]` → Filme
+- Filme → `[:PERTENCE_A]` → Gênero
+- Filme → `[:DIRIGIDO_POR]` → Diretor
+- Ator → `[:ATUOU_EM]` → Filme
 
 ### 🛠️ Como executar os scripts
 Instale o Neo4j Desktop ou acesse Neo4j Aura
